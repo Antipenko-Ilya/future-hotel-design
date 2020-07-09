@@ -1,0 +1,33 @@
+.SlideImg {
+    max-width: 100%;
+}
+
+.Slide {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    max-width: 100%;
+    display: none;
+}
+
+.SliderController {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 80%;
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.Slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slidePrev {
+    display: flex;
+}

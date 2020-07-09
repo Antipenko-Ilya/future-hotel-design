@@ -1,0 +1,48 @@
+.Logo {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.Logo img {
+    max-width: 400px;
+}
+
+.NavMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.MenuItemFigure {
+    font-size: 14px;
+    color: grey;
+}
+
+.MenuItemTitle {
+    font-size: 18px;
+    transition: .1s;
+}
+
+.MenuActive span:nth-child(2) {
+    font-weight: bold;
+}
+
+.LangSwitcher {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.LangSwitcherDisabled {
+    font-size: 14px;
+    color: grey;
+}
+
+.LangSwitcherActive {
+    font-size: 18px;
+    font-weight: bold;
+}
+
