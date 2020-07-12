@@ -1,0 +1,19 @@
+.SectionTitle {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    font-size: 32px;
+    align-items: center;
+}
+
+.SectionTitleText {
+    flex-shrink: 0;
+    border: 6px solid #eeeeee;
+    padding: 5px 10px;
+}
+
+.SectionTitleLine {
+    width: 100%;
+    height: 5px;
+    background-color: #eeeeee;
+}
