@@ -5,7 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import Header from './Components/Header/Header';
-import MainPage from './Components/MainPage/MainPage'
+import MainPage from './Components/MainPage/MainPage';
+import Contacts from './Components/Contacts/Contacts';
+import Projects from './Components/Projects/Projects';
+import Stages from './Components/Stages/Stages';
+import Team from './Components/Team/Team';
 import './App.css';
 
 function App() {
@@ -21,19 +25,19 @@ function App() {
           </Route>
 
           <Route path='/projects'>
-            
+            <Projects />
           </Route>
 
           <Route path='/stages'>
-            
+            <Stages />
           </Route>
 
           <Route path='/team'>
-            
+            <Team />
           </Route>
 
           <Route path='/contacts'>
-            
+            <Contacts />
           </Route>
 
         </Switch>

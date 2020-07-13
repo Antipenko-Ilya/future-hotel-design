@@ -1,20 +1,18 @@
 import React from 'react';
 import styles from './BreifSubComponent.module.css'
 
-function BreifSubComponent() {
+function BreifSubComponent(props) {
 
 
     return (
         <div className={styles.BreifSubComponent}>
-           <div className={styles.Title}>
-               <div className={styles.TitleSmallText}>Эскизная</div>
-               <div className={styles.TitleBigText}>Архитектура</div>
-           </div>
+            <div className={styles.Title}>
+                <div className={styles.TitleSmallText}>{props.subtitle}</div>
+                <div className={styles.TitleBigText}>{props.title}</div>
+            </div>
 
             <div className={styles.MainText}>
-                TextTextTExtTextTextTExtvTextTextTExt
-                TextTextTExtTextTextTExtTextTextTExt
-                TextTextTExtTextTextTExtTextTextTExt
+            {props.description}
             </div>
         </div>
     )

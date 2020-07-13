@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Team.module.css';
-import globalStyles from '../../../globalStyles.module.css';
+// import globalStyles from '../../../globalStyles.module.css';
 
 function Team(props) {
 
