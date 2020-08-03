@@ -1,0 +1,26 @@
+.PreviewWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.Preview {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.PreviewElem {
+    margin: 20px;
+}
+.PreviewButton {
+    background: #E5E5E5;
+    border: none;
+    min-width: 220px;
+    min-height: 40px;
+    font-size: 17px;
+    line-height: 20px;  
+}

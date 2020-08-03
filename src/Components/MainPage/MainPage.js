@@ -1,16 +1,36 @@
 import React from 'react';
-import Slider from './Slider/Slider'
-import Breif from './Breif/Breif'
-import Map from './Map/Map'
-import Partners from './Partners/Partners'
+import Slider from './Slider/Slider';
+import About from './About/About';
+import Preview from './Preview/Preview';
+import Contacts from './Contacts/Contacts';
 
+import Partners from './Partners/Partners';
+
+const projects = [
+  {
+    image: '1'
+  },
+  {
+    image: '2'
+  },
+  {
+    image: '3'
+  },
+  {
+    image: '4'
+  }
+];
 function MainPage() {
   return (
     <>
         <Slider/>
-        <Breif/>
-        <Map/>
-        <Partners/>
+        <About />
+        {/* <Breif/> */}
+        {/* <Map/> */}
+        {/* <Partners/> */}
+        <Preview projects={projects}/>
+        <Contacts/>
+
     </>
   );
 }
