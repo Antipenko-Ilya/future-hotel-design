@@ -1,32 +1,41 @@
 .Logo {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .Logo img {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .NavMenu {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1250px;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 20px 0px;
+    
 }
-
+.NavMenuBlock {
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .MenuItemFigure {
     font-size: 14px;
     color: grey;
 }
 .MenuItem {
-    margin-top: 60px;
+    margin-top: 70px;
+    font-family: 'Times new Roman';
 }
 .MenuItemTitle {
-    font-size: 30px;
+    font-size: 21px;
     transition: .1s;
+}
+.MenuItemTitle:hover {
+    color:rgba(0,0,0,0.5);
 }
 
 /* .MenuActive span:nth-child(2) {

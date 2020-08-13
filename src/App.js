@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Header from './Components/Header/Header';
 import MainPage from './Components/MainPage/MainPage';
-import Contacts from './Components/Contacts/Contacts';
+import Contacts from './Components/MainPage/Contacts/Contacts';
 import Projects from './Components/Projects/Projects';
 import Stages from './Components/Stages/Stages';
 import Team from './Components/Team/Team';
@@ -39,8 +39,8 @@ function App() {
           <Route path='/contacts'>
             <Contacts />
           </Route>
-
         </Switch>
+        <Contacts/>
       </div>
     </div>
     </Router>

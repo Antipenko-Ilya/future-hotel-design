@@ -1,0 +1,9 @@
+.VideoWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Video {
+  width: 80%;
+  margin: 0 auto;
+}

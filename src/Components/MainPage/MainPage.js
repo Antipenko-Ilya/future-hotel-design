@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from './Slider/Slider';
+import Video from './Video/Video';
 import About from './About/About';
 import Preview from './Preview/Preview';
 import Contacts from './Contacts/Contacts';
@@ -23,13 +24,14 @@ const projects = [
 function MainPage() {
   return (
     <>
-        <Slider/>
+        <Video />
+        {/* <Slider/> */}
         <About />
         {/* <Breif/> */}
         {/* <Map/> */}
         {/* <Partners/> */}
         <Preview projects={projects}/>
-        <Contacts/>
+      
 
     </>
   );

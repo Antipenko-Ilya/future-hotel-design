@@ -1,0 +1,47 @@
+.Projects {
+  width: 87%;
+  margin: 0 auto;
+}
+.ProjectsFilter {
+  width: 87%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.ProjectsFilterText {
+  cursor: pointer;
+  color:rgba(0,0,0,0.5);
+}
+.ProjectsFilterText:hover {
+  color: #000
+}
+.ProjectsContent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.ProjectsElem:hover {
+  color:rgba(0,0,0,0.5);
+}
+.ProjectsElem {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+.ProjectsElemTitle {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.ProjectsElemImg {
+  max-width: 560px;
+}
+.ProjectsElemDecription {
+  font-size: 1.6rem;
+  margin: 1.2em 0 0;
+}
