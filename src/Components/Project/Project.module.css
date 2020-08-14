@@ -1,0 +1,65 @@
+.Project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman';
+}
+.ProjectHero {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.ProjectHeroImg {
+  width: 100%;
+}
+.ProjectTitle {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.ProjectContent {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  color: rgba(0,0,0,0.5);
+}
+.ProjectContentElem {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,0.5);
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.ProjectContentElemBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+}
+.ProjectContentElemBlock:first-child {
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.ProjectImgs {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.ProjectImgsElem:hover {
+  
+}
+.ProjectImgsElem:first-child{
+  width: 69%;
+  height: auto;
+}
+.ProjectImgsElem:last-child{
+  width: 30%;
+  background: url('../../images/test/2.JPG');
+  block-size: auto;
+  height: auto;
+}

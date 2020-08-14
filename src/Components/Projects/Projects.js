@@ -11,63 +11,63 @@ const arr = [
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-1.jpg',
+        imgHover: 'project-2.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-3.jpg',
+        imgHover: 'project-4.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-5.JPG',
+        imgHover: 'project-6.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-7.jpg',
+        imgHover: 'project-8.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-9.jpg',
+        imgHover: 'project-10.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-11.jpg',
+        imgHover: 'project-12.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-1.jpg',
+        imgHover: 'project-2.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-3.jpg',
+        imgHover: 'project-4.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
+        img: 'project-5.JPG',
+        imgHover: 'project-6.jpg'
     },
     {
         name: 'Яхт-школа г. Геленджик',
         decription: 'Описание',
-        img: '../../images/Projects/project-1.jpg',
-        imgHover: '../../images/Projects/project-1.jpg'
-    },
+        img: 'project-7.jpg',
+        imgHover: 'project-8.jpg'
+    }
 ]
 
 function Projects(props) {

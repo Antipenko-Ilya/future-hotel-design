@@ -6,15 +6,18 @@
     margin-bottom: 100px;
 }
 .Preview {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 .PreviewElem {
-    margin: 20px;
+    margin-bottom: 25px;
+}
+.PreviewImage {
+    min-width: 525px;
 }
 .PreviewButton {
     background: #E5E5E5;

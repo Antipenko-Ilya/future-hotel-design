@@ -1,6 +1,7 @@
 .Projects {
-  width: 87%;
+  width: 80%;
   margin: 0 auto;
+  font-family: 'Times New Roman';
 }
 .ProjectsFilter {
   width: 87%;
@@ -13,13 +14,14 @@
 .ProjectsFilterText {
   cursor: pointer;
   color:rgba(0,0,0,0.5);
+  font-size: 14px;
 }
 .ProjectsFilterText:hover {
   color: #000
 }
 .ProjectsContent {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .ProjectsElem:hover {
@@ -35,13 +37,13 @@
   margin-bottom: 100px;
 }
 .ProjectsElemTitle {
-  font-size: 1.8rem;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 .ProjectsElemImg {
-  max-width: 560px;
+  width: 100%;
 }
 .ProjectsElemDecription {
-  font-size: 1.6rem;
+  font-size: 18px;
   margin: 1.2em 0 0;
 }

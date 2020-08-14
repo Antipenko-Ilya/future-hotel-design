@@ -1,17 +1,17 @@
 .Logo {
     text-align: center;
-    padding-top: 50px;
 }
 
 .Logo img {
-    max-width: 300px;
+    max-width: 280px;
+    height: auto;
 }
 
 .NavMenu {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     max-width: 1080px;
     margin: 0 auto;
     
