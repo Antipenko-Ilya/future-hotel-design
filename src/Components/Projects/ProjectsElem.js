@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function ProjectsElem(props) {
     const [bgcImg, setBgcImg] = useState(props.img);
-
+    const index = props.index
     // toggleBgc(flag){
     //     setBgcImg(flag ? props.imgHover : props.img);
     // };
@@ -14,7 +14,7 @@ function ProjectsElem(props) {
             className={styles.ProjectsElem}
         >
             <span className={styles.ProjectsElemTitle}>{props.name}</span>
-            <Link to={'/project'}>
+            <Link to={`/project/?${index}`}>
                 <img 
                     src={require(`../../images/Projects/${bgcImg}`)} 
                     className = {styles.ProjectsElemImg}

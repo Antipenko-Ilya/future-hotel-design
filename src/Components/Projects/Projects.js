@@ -84,7 +84,7 @@ function Projects(props) {
                 <span className={styles.ProjectsFilterText}>МЕД. УЧРЕЖДЕНИЯ</span>
             </div>
             <div className={styles.ProjectsContent}>
-                {arr.map((el) => <ProjectsElem {...el} />)}
+                {arr.map((el, index) => <ProjectsElem index={index} {...el} />)}
             </div>
         </div>
     )

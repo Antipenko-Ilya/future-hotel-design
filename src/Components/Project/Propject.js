@@ -1,17 +1,26 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import {projectsData} from '../../ProjectsData'
 //style
 import styles from './Project.module.css';
-// import globalStyles from '../../../globalStyles.module.css';
+import { useParams, useLocation } from 'react-router-dom';
 
 
 function Project(props) {
+    /* initial */
+    const location = useLocation()
+    const [projectIndex, setProjectIndex] = useState(0)
+    useEffect(()=>{
+      setProjectIndex(location.search.slice(1))
+    }, [0])
+    
+    console.log(projectsData[projectIndex])
+
     return (
         <div className={styles.Project}>
             <div className={styles.ProjectHero}>
-              <img className={styles.ProjectHeroImg} src={require('../../images/test/1.JPG')}></img>
+              <img className={styles.ProjectHeroImg} src={projectsData[projectIndex].images[1]}></img>
             </div>
-            <span className={styles.ProjectTitle}>Апарт - отель Citadines City Centre Tbilisi</span>
+            <span className={styles.ProjectTitle}>{projectsData[projectIndex].title}</span>
             <div className={styles.ProjectContent}>
               <div className={styles.ProjectContentElem}>
                 <div className={styles.ProjectContentElemBlock}>
@@ -19,14 +28,14 @@ function Project(props) {
                   <span className={styles.ProjectContentElemText}>Тбилиси, Грузия</span>
                 </div>
                 <div className={styles.ProjectContentElemBlock}>
-                  <span className={styles.ProjectContentElemText}>Тип объетка</span>
+                  <span className={styles.ProjectContentElemText}>Тип объекта</span>
                   <span className={styles.ProjectContentElemText}>Апарт - отель</span>
                 </div>
               </div>
               <div className={styles.ProjectContentElem}>
                 <div className={styles.ProjectContentElemBlock}>
                   <span className={styles.ProjectContentElemText}>Площадь</span>
-                  <span className={styles.ProjectContentElemText}>5 600м</span>
+                  <span className={styles.ProjectContentElemText}>5 600 м</span>
                 </div>
                 <div className={styles.ProjectContentElemBlock}>
                   <span className={styles.ProjectContentElemText}>Год</span>
@@ -35,9 +44,18 @@ function Project(props) {
               </div>
             </div>
             <div className={styles.ProjectImgs}>
-              <img className={styles.ProjectImgsElem} src={require('../../images/test/1.JPG')}></img>
-              <div className={styles.ProjectImgsElem}></div>
-              {/* <img className={styles.ProjectImgsElem} src={require('../../images/test/2.JPG')}></img> */}
+              <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[2]} ></img>
+              <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[3]}` }}></div>
+            </div>
+            <img className={styles.Project__WideImage} src={projectsData[projectIndex].images[3]}></img>
+            <div className={styles.ProjectImgs_modif}>
+              <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[5]}` }}></div>
+              <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[4]} ></img>
+            </div>
+            <img className={styles.Project__WideImage} src={projectsData[projectIndex].images[6]}></img>
+            <div className={styles.ProjectImgs_modif}>
+              <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[7]}` }}></div>
+              <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[8]} ></img>
             </div>
         </div>
     )
