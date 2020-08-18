@@ -17,13 +17,13 @@ function ProjectsElem(props) {
             <Link to={'/project'}>
                 <img 
                     src={require(`../../images/Projects/${bgcImg}`)} 
-                    className   ={styles.ProjectsElemImg}
-                    onMouseEnter   ={() => {
+                    className = {styles.ProjectsElemImg}
+                    onMouseEnter = { () => {
                         setBgcImg(props.imgHover);
                         console.log(bgcImg);
                     }}
-                    onMouseLeave ={() => setBgcImg(props.img)}
-                ></img>
+                    onMouseLeave = { () => setBgcImg(props.img)}
+                />
             </Link>
             <span className={styles.ProjectsElemDecription}>{props.decription}</span>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
+// import Slider from './SliderOld/Slider';
 import Slider from './Slider/Slider';
-import Video from './Video/Video';
 import About from './About/About';
 import Preview from './Preview/Preview';
 import Contacts from './Contacts/Contacts';
@@ -24,7 +24,7 @@ const projects = [
 function MainPage() {
   return (
     <>
-        <Video />
+        <Slider />
         {/* <Slider/> */}
         <About />
         {/* <Breif/> */}

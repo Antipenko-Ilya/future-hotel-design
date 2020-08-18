@@ -1,77 +1,81 @@
-import React, {useState, useEffect} from 'react';
+import React , {useState, useEffect, useRef, Fragment} from 'react';
 import styles from './Slider.module.css';
-import slides from './SliderData';
+import testImage from '../../../images/Projects/project-5.JPG'
+import {useTransition, animated} from 'react-spring'
 
-
-
-function Slider() {
-
-  const [tempSlide, setTempSlide] = useState(0);
-
-  function slideNext() {
-    let newSlideIndex = (tempSlide+1)%slides.length;
-    setTempSlide(newSlideIndex);
+const mainSliderData = [
+  {
+    node: <img className={styles.Slide} src={testImage}></img>,
+    timeout: 4000
+  },
+  {
+    node: <img className={styles.Slide} src={testImage}></img>,
+    timeout: 4000
+  },
+  {
+    node: <video controls={true} className={styles.Slide} preload='true' autoplay='true'>
+            <source src={require('../../../videos/video-1.mp4')}/>
+          </video>,
+    timeout: 20000
   }
+]
 
-  function slidePrev() {
-    let newSlideIndex = (tempSlide == 0) ? slides.length-1 : tempSlide-1;
-    setTempSlide(newSlideIndex);
-  }
+function Slider(props) {
 
+    /* state */
+    const [tempSlide, setTempSlide] = useState(0);
+    const [timeoutId, setTimeoutId] = useState(0)
 
-  function renderNextSlideName() {
-    let nextSlideIndex = (tempSlide+1)%slides.length;
-    return slides[nextSlideIndex].name
-  }
+    /* nextSlide hook */
+    useEffect(()=>{
+      const nextSlideIndex = (tempSlide+1)%mainSliderData.length
+      const timeout = mainSliderData[tempSlide].timeout;
+      clearTimeout(timeoutId)
+      setTimeoutId(
+        setTimeout(()=>setTempSlide(nextSlideIndex), timeout)
+      )
+    }, [tempSlide])
 
-  function renderPrevSlideName() {
-    let nextSlideIndex = (tempSlide == 0) ? slides.length-1 : tempSlide-1;
-    return slides[nextSlideIndex].name
-  }
-  
+    /* initial */
+    const wrapperRef = useRef()
+    useEffect(()=>{
+      const width = wrapperRef.current.offsetWidth;
+      wrapperRef.current.style.height = `${width * 9/16}px`
+    }, [0])
 
-  const Slide = (props) => {
-    return (
-      <div className={styles.Slide} style={props.tempSlide==props.index ? {display: 'block'} : {}} >
-        <img className={styles.SlideImg} src={require(`${props.path}`)}></img>
-      </div>
-    )
-  }
+    return(
+        <div ref={wrapperRef} className={styles.SliderWrapper}>
+          <Slides tempSlide={tempSlide}/>
+          <div
+            className={styles.SliderController}
+            onClick={()=>setTempSlide((tempSlide+1)%3)}
+          />
+          <div 
+            className={styles.SliderController}
+            onClick={()=>setTempSlide((tempSlide+1)%3)}
+          />
+        </div>
+    );
+}
+export default Slider;
+
+const Slides = ({tempSlide}) => {
+  const transitions = useTransition(tempSlide, item => item, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: {
+      duration: 1000
+    }
+  })
 
   return (
-    <div className={styles.Slider}>
-
-      {slides.map((item, index)=>
-        <Slide key={item.name} path={item.src} tempSlide={tempSlide} index={index}/>
+    <>
+      {transitions.map(({ item, props, key }) =>
+        <animated.div className={styles.SlideWrapper} key={key} style={props}>
+          {mainSliderData[item].node}
+        </animated.div>
       )}
-
-      <div className={styles.SliderController}>
-
-        <div className={styles.slidePrev} onClick={slidePrev}>
-          <img style={{transform: "rotateZ(180deg)"}} className={styles.slideControllerImg} src={require('../../../images/btn.png')}></img>
-          <div className={styles.slideControllerTextPrev}>
-            <div>Предыдущий</div>
-            <div className={styles.slidePrevNextText}>{renderPrevSlideName()}</div>
-          </div>
-        </div>
-
-        <div className={styles.slideInfo}>
-          <div>Сейчас</div>
-          <div className={styles.slideTempText}>{slides[tempSlide].name}</div>
-        </div>
-
-        <div className={styles.slidePrev} onClick={slideNext}>
-          <div className={styles.slideControllerTextNext}>
-            <div>Следующий</div>
-            <div className={styles.slidePrevNextText}>{renderNextSlideName()}</div>
-          </div>
-          <img className={styles.slideControllerImg} src={require('../../../images/btn.png')}></img>
-        </div>
-
-      </div>
-
-    </div>
-  );
+    </>
+  )
 }
-
-export default Slider;
