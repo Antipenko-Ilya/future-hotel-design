@@ -13,11 +13,11 @@ import img12 from './images/12.jpg'
 export const TibilisiImages = [
     main1,
     main2,
+    main1,
     img7,
     img4,
     img5,
     img8,
-    main,
     img9,
     img10,
     img12

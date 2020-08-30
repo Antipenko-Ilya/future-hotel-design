@@ -3,7 +3,7 @@ import React from 'react';
 
 /*Components*/
 import ProjectsElem from './ProjectsElem';
-
+import {projectsData} from '../../ProjectsData'
 /*Styles*/
 import styles from './Projects.module.css';
 
@@ -84,7 +84,7 @@ function Projects(props) {
                 <span className={styles.ProjectsFilterText}>МЕД. УЧРЕЖДЕНИЯ</span>
             </div>
             <div className={styles.ProjectsContent}>
-                {arr.map((el, index) => <ProjectsElem index={index} {...el} />)}
+                {projectsData.map((el, index) => <ProjectsElem index={index} {...el} />)}
             </div>
         </div>
     )

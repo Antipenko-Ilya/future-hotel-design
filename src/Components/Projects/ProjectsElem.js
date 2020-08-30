@@ -3,7 +3,7 @@ import styles from './Projects.module.css';
 import { Link } from 'react-router-dom';
 
 function ProjectsElem(props) {
-    const [bgcImg, setBgcImg] = useState(props.img);
+    const [bgcImg, setBgcImg] = useState(props.images[0]);
     const index = props.index
     // toggleBgc(flag){
     //     setBgcImg(flag ? props.imgHover : props.img);
@@ -13,16 +13,16 @@ function ProjectsElem(props) {
         <div 
             className={styles.ProjectsElem}
         >
-            <span className={styles.ProjectsElemTitle}>{props.name}</span>
+            <span className={styles.ProjectsElemTitle}>{props.title}</span>
             <Link to={`/project/?${index}`}>
                 <img 
-                    src={require(`../../images/Projects/${bgcImg}`)} 
+                    src={bgcImg} 
                     className = {styles.ProjectsElemImg}
                     onMouseEnter = { () => {
-                        setBgcImg(props.imgHover);
+                        setBgcImg(props.images[1]);
                         console.log(bgcImg);
                     }}
-                    onMouseLeave = { () => setBgcImg(props.img)}
+                    onMouseLeave = { () => setBgcImg(props.images[0])}
                 />
             </Link>
             <span className={styles.ProjectsElemDecription}>{props.decription}</span>

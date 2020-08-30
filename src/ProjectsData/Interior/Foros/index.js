@@ -13,6 +13,7 @@ import img13 from './images/13.jpg'
 export const ForosImages = [
     main1,
     main2,
+    main1,
     img1,
     img2,
     img4,
