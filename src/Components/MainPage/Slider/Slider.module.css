@@ -19,13 +19,21 @@
 }
 
 .SliderController {
+  cursor: pointer;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
   height: 40px;
   width: 20px;
   top: auto;
   left: 20px;
-  background: red;
+  color: #fff;
+  background: rgba(0, 0, 0, .7);
 }
+
 
 .SliderController:last-child {
   left: auto;

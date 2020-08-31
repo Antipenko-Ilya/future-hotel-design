@@ -1,0 +1,47 @@
+.Team {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.TeamContent {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    margin-bottom: 30px;
+}
+.TeamAnotherContent {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    margin-bottom: 30px;
+}
+.TeamContentImg {
+    max-width: 500px;
+    margin-right: 70px;
+}
+.TeamContentImg:last-child  {
+    margin-right: 0px;
+    margin-left: 70px;
+}
+.TeamContentText {
+    max-width: 500px;
+    text-align: right;
+    font-family: 'Times New Roman';
+}
+.TeamContentText:last-child {
+    max-width: 500px;
+    text-align: left;
+    font-family: 'Times New Roman';
+}
+
+.TeamContentTitle {
+    font-size: 48px;
+}
+.TeamContentSubtitle{
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 70px;
+}
+.TeamContentDescription {
+    font-size: 26px;
+}

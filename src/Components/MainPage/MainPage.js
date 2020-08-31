@@ -25,14 +25,8 @@ function MainPage() {
   return (
     <>
         <Slider />
-        {/* <Slider/> */}
         <About />
-        {/* <Breif/> */}
-        {/* <Map/> */}
-        {/* <Partners/> */}
         <Preview projects={projects}/>
-      
-
     </>
   );
 }

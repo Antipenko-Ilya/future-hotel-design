@@ -27,6 +27,9 @@ function Contacts(props) {
                         <div className={styles.ContactsInfoElemEnd}>
                             <span className={styles.ContactsInfoElemText}>Instagram</span>
                         </div> 
+                        <div className={styles.ContactsInfoElemEnd}>
+                            <span className={styles.ContactsInfoElemText}>Youtube</span>
+                        </div> 
                     </div>
                 </div>
             </div>

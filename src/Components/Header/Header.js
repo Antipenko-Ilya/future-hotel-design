@@ -28,7 +28,7 @@ function Header() {
             <img src={require('../../images/Logo.png')}></img>
           </NavLink>
           <div className={styles.NavMenuBlock}>
-            <NavLink to='/projects' className={styles.MenuItem} activeClassName={styles.MenuActive}>
+            <NavLink to='/approach' className={styles.MenuItem} activeClassName={styles.MenuActive}>
               <span className={styles.MenuItemTitle}>ПОДХОД</span>
             </NavLink>
             <NavLink to='/contacts' className={styles.MenuItem} activeClassName={styles.MenuActive}>

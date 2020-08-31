@@ -49,11 +49,11 @@ function Slider(props) {
           <div
             className={styles.SliderController}
             onClick={()=>setTempSlide((tempSlide+1)%3)}
-          />
+          >&#10094;</div>
           <div 
             className={styles.SliderController}
             onClick={()=>setTempSlide((tempSlide+1)%3)}
-          />
+          >&#10094;</div>
         </div>
     );
 }
