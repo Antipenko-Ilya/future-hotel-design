@@ -24,19 +24,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 60px;
   font-weight: bold;
-  height: 40px;
+  filter: drop-shadow(0px 0px 10px grey);
   width: 20px;
   top: auto;
   left: 20px;
   color: #fff;
-  background: rgba(0, 0, 0, .7);
+  transition: .4s;
 }
 
+.SliderController:hover {
+  transform: scale(1.1);
+}
 
 .SliderController:last-child {
   left: auto;
   right: 20px;
   transform: rotateZ(180deg);
+}
+.SliderController:last-child:hover {
+  transform: scale(1.1) rotateZ(180deg);
 }

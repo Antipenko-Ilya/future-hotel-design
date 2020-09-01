@@ -7,7 +7,7 @@ import {dobrogradImages} from './Interior/Dobrograd'
 
 export const projectsData = [
     {
-        title: 'Апарт – отель Citadines City Centre Tbilisi. Грузия. 2020 г.',
+        title: 'Апарт – отель Citadines City Centre Tbilisi',
         placement: 'Тбилиси, Грузия',
         type: 'Апарт - отель',
         area: '5 600 м',
@@ -16,7 +16,7 @@ export const projectsData = [
         description: 'test'
     },
     {
-        title: 'Гостиничный комплекс «Югорская долина» г. Ханты-Мансийск 2019-2020гг',
+        title: 'Гостиничный комплекс «Югорская долина»',
         placement: 'Ханты-Мансийск, Россия',
         type: 'Гостиничный комплекс',
         area: '7200',
@@ -25,7 +25,7 @@ export const projectsData = [
         description: 'test'
     },
     {
-        title: 'Foros',
+        title: 'Санаторий «Южный»',
         placement: 'Ялта, Россия',
         type: 'Санаторий',
         area: '3760',
@@ -34,7 +34,7 @@ export const projectsData = [
         description: 'test'
     },
     {
-        title: 'Kolobovich',
+        title: 'Лесной комплекс отдыха «Колбовичи»',
         placement: 'Республика Беларусь',
         type: 'Туристический комплекс',
         area: '6200',
@@ -43,7 +43,7 @@ export const projectsData = [
         description: 'test'
     },
     {
-        title: 'Kiparis',
+        title: 'Семейный отель - вилла «7 Кипарисов»',
         placement: 'Гагра, Абхазия',
         type: 'Отель - вилла',
         area: '1500',
@@ -52,7 +52,7 @@ export const projectsData = [
         description: 'test'
     },
     {
-        title: 'Dobrograd',
+        title: 'Парк - отель «Доброград» II очередь',
         placement: 'Доброград, Россия',
         type: 'Парк - отель',
         area: '4280',

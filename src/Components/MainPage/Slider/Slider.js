@@ -2,6 +2,7 @@ import React , {useState, useEffect, useRef, Fragment} from 'react';
 import styles from './Slider.module.css';
 import testImage from '../../../images/Projects/project-5.JPG'
 import {useTransition, animated} from 'react-spring'
+import BlackBG from '../../../images/black.jpg'
 
 const mainSliderData = [
   {
@@ -13,7 +14,7 @@ const mainSliderData = [
     timeout: 4000
   },
   {
-    node: <video controls={true} className={styles.Slide} preload='true' autoplay='true'>
+    node: <video controls={true} poster={BlackBG} className={styles.Slide} autoPlay={true} onEnded={()=>console.log(12)}>
             <source src={require('../../../videos/video-1.mp4')}/>
           </video>,
     timeout: 20000
