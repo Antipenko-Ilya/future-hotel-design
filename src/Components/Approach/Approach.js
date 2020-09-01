@@ -100,17 +100,17 @@ const project3 = [
 function Approach(props) {
     return (
         <div className={styles.Approach}>
-            <div>
-                <img></img>
-                <ApproachTable />
+            <div className={styles.ApproachElem}>
+                <img className={styles.ApproachElemImg} src={require('../../images/Approach/project-1.jpg')}></img>
+                <ApproachTable flag={false} name={'Эскизный проект'} content={project1}/>
             </div>
-            <div>
-                <ApproachTable />
-                <img></img>
+            <div className={styles.ApproachElem}>
+                <ApproachTable flag={true} name={'Рабочий проект'} content={project2}/>
+                <img className={styles.ApproachElemImg} src={require('../../images/Approach/project-2.png')}></img>
             </div>
-            <div>
-                <img></img>
-                <ApproachTable />
+            <div className={styles.ApproachElem}>
+                <img className={styles.ApproachElemImg} src={require('../../images/Approach/project-3.png')}></img>
+                <ApproachTable flag={false} name={'Спецификация'} content={project3}/>
             </div>
         </div>
     )

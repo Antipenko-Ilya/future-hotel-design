@@ -16,8 +16,9 @@
 .PreviewElem {
     margin-bottom: 25px;
 }
+
 .PreviewImage {
-    min-width: 525px;
+    min-width: 620px;
 }
 .PreviewButton {
     background: #E5E5E5;
@@ -27,4 +28,24 @@
     font-size: 17px;
     line-height: 20px;
     font-family: 'Times new Roman';
+}
+@media (max-width: 1450px) {
+    .PreviewImage {
+        min-width: 555px;
+    }
+}
+@media (max-width: 1400px) {
+    .PreviewImage {
+        min-width: 520px;
+    }
+}
+@media (max-width: 1350px) {
+    .PreviewImage {
+        min-width: 450px;
+    }
+}
+@media (max-width: 1300px) {
+    .PreviewImage {
+        min-width: 350px;
+    }
 }
