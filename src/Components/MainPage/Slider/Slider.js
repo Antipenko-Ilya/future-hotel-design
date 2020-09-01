@@ -15,7 +15,7 @@ const mainSliderData = [
   },
   {
     node: <video controls={true} poster={BlackBG} className={styles.Slide} autoPlay={true} onEnded={()=>console.log(12)}>
-            <source src={require('../../../videos/video-1.mp4')}/>
+            {/* <source src={require('../../../videos/video-1.mp4')}/> */}
           </video>,
     timeout: 20000
   }

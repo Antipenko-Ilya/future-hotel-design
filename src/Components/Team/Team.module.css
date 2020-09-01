@@ -1,19 +1,20 @@
 .Team {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .TeamContent {
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 .TeamAnotherContent {
     display: flex;
     justify-content: flex-end;
     /* align-items: center; */
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .TeamContentImg {
     max-width: 500px;

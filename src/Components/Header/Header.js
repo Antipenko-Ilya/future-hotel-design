@@ -31,9 +31,9 @@ function Header() {
             <NavLink to='/approach' className={styles.MenuItem} activeClassName={styles.MenuActive}>
               <span className={styles.MenuItemTitle}>ПОДХОД</span>
             </NavLink>
-            <NavLink to='/contacts' className={styles.MenuItem} activeClassName={styles.MenuActive}>
+            <a href='#contact' className={styles.MenuItem} activeClassName={styles.MenuActive}>
               <span className={styles.MenuItemTitle}>КОНТАКТЫ</span>
-            </NavLink>
+            </a>
           </div>
       </div>
     </div>

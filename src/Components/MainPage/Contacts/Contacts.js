@@ -4,12 +4,12 @@ import styles from './Contacts.module.css';
 
 function Contacts(props) {
     return(
-        <div className={styles.ContactsWrap}>
+        <div id='contact' className={styles.ContactsWrap}>
             <div className={styles.Contacts}>
                 <div className={styles.ContactsInfo}>
                     <div className={styles.ContactsInfoBlock}>
                         <div className={styles.ContactsInfoElemStart}>
-                            <span>ул. Пречистенка 40/2,<br/> 119034, г. Москва</span>
+                            <span> г. Москва<br/>ул. Пречистенка 40/2,<br/> 119034</span>
                         </div>
                     </div>
                     <div className={styles.ContactsInfoBlock}>
