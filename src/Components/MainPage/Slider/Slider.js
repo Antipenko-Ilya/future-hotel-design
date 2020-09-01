@@ -6,14 +6,6 @@ import BlackBG from '../../../images/black.jpg'
 
 const mainSliderData = [
   {
-    node: <img className={styles.Slide} src={testImage}></img>,
-    timeout: 4000
-  },
-  {
-    node: <img className={styles.Slide} src={testImage}></img>,
-    timeout: 4000
-  },
-  {
     node: <video controls={true} poster={BlackBG} className={styles.Slide} autoPlay={true} onEnded={()=>console.log(12)}>
             <source src={require('../../../videos/video-1.mp4')}/>
           </video>,
@@ -49,11 +41,11 @@ function Slider(props) {
           <Slides tempSlide={tempSlide}/>
           <div
             className={styles.SliderController}
-            onClick={()=>setTempSlide((tempSlide+1)%3)}
+            onClick={()=>setTempSlide((tempSlide+1)%mainSliderData.length)}
           >&#10094;</div>
           <div 
             className={styles.SliderController}
-            onClick={()=>setTempSlide((tempSlide+1)%3)}
+            onClick={()=>setTempSlide((tempSlide+1)%mainSliderData.length)}
           >&#10094;</div>
         </div>
     );
