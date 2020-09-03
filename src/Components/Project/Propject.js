@@ -11,6 +11,7 @@ function Project(props) {
     const [projectIndex, setProjectIndex] = useState(0)
     useEffect(()=>{
       setProjectIndex(location.search.slice(1))
+        window.scrollTo(0,0)
     }, [0])
     
     console.log(projectsData[projectIndex])
@@ -52,17 +53,17 @@ function Project(props) {
               <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[6]}` }}></div>
               <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[7]} ></img>
             </div>
-            <img className={styles.Project__WideImage} src={projectsData[projectIndex].images[8]}></img>
-            <div className={styles.ProjectImgs}>
-              <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[9]} ></img>
-              <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[10] || projectsData[projectIndex].images[1]}` }}></div>
-            </div>
-            <img className={styles.Project__WideImage} src={projectsData[projectIndex].images[11]}></img>
-            {projectsData[projectIndex].images[12] && <div className={styles.ProjectImgs_modif}>
-              <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[12]}` }}></div>
-              <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[13] || projectsData[projectIndex].images[1]} ></img>
-            </div>}
-            {projectsData[projectIndex].images[14] && <img className={styles.Project__WideImage} src={projectsData[projectIndex].images[14]}></img>}
+            {/*<img className={styles.Project__WideImage} src={projectsData[projectIndex].images[8]}></img>*/}
+            {/*<div className={styles.ProjectImgs}>*/}
+            {/*  <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[9]} ></img>*/}
+            {/*  <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[10] || projectsData[projectIndex].images[1]}` }}></div>*/}
+            {/*</div>*/}
+            {/*<img className={styles.Project__WideImage} src={projectsData[projectIndex].images[11]}></img>*/}
+            {/*{projectsData[projectIndex].images[12] && <div className={styles.ProjectImgs_modif}>*/}
+            {/*  <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[12]}` }}></div>*/}
+            {/*  <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[13] || projectsData[projectIndex].images[1]} ></img>*/}
+            {/*</div>}*/}
+            {/*{projectsData[projectIndex].images[14] && <img className={styles.Project__WideImage} src={projectsData[projectIndex].images[14]}></img>}*/}
             {/* <div className={styles.ProjectImgs}>
               <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[15]} ></img>
               <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[16]}` }}></div>

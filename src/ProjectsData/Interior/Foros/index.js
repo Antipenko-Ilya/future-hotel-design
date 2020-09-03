@@ -14,12 +14,9 @@ export const ForosImages = [
     main1,
     main2,
     main1,
-    img1,
-    img2,
-    img4,
-    img6,
     img8,
+    img6,
     img10,
-    img12,
-    img13
+    img13,
+    img12
 ]
