@@ -49,10 +49,10 @@ function Project(props) {
               <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[4]}` }}></div>
             </div>
             <img className={styles.Project__WideImage} src={projectsData[projectIndex].images[5]}></img>
-            <div className={styles.ProjectImgs_modif}>
+            {projectsData[projectIndex].images[6] && <div className={styles.ProjectImgs_modif}>
               <div className={styles.ProjectImgsElem} style={ { backgroundImage: `url(${projectsData[projectIndex].images[6]}` }}></div>
               <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[7]} ></img>
-            </div>
+            </div>}
             {/*<img className={styles.Project__WideImage} src={projectsData[projectIndex].images[8]}></img>*/}
             {/*<div className={styles.ProjectImgs}>*/}
             {/*  <img className={styles.ProjectImgsElem} src={projectsData[projectIndex].images[9]} ></img>*/}

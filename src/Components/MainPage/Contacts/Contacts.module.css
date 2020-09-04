@@ -27,7 +27,7 @@
 .ContactsInfo {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     font-family: 'Times new Roman';
 }
@@ -42,6 +42,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    line-height: 25px;
 }
 .ContactsInfoBlock {
     display: flex;
