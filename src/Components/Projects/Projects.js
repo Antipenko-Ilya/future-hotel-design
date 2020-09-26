@@ -50,8 +50,8 @@ function Projects(props) {
     return (
         <div className={styles.Projects}>
             <div className={styles.ProjectsFilter}>
-                {projectsMenuData.map(item=>(
-                    <ProjectsMenuElem type={item.type}>
+                {projectsMenuData.map((item, i)=>(
+                    <ProjectsMenuElem key={i} type={item.type}>
                         {item.title}
                     </ProjectsMenuElem>
                 ))}
@@ -59,9 +59,9 @@ function Projects(props) {
             <div className={styles.ProjectsContent}>
                 {projectsData.map((el, index) => {
                     if (filter==='all')
-                        return <ProjectsElem index={index} {...el} />
+                        return <ProjectsElem key={index} index={index} {...el} />
                     else if (el.projType===filter)
-                        return <ProjectsElem index={index} {...el} />
+                        return <ProjectsElem key={index} index={index} {...el} />
                 })}
             </div>
         </div>

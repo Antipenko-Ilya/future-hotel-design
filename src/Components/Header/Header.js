@@ -31,16 +31,16 @@ function Header() {
             <div className={'NavMenu'}>
 
                 {showMenuState && <div className={mobileMenuClasses}>
-                    <NavLink exact to='/projects' className={'MenuItem'} activeClassName={'MenuActive'}>
+                    <NavLink onClick={()=>setShowMenuState(false)} exact to='/projects' className={'MenuItem'} activeClassName={'MenuActive'}>
                         <span className={'MenuItemTitle'}>ПРОЕКТЫ</span>
                     </NavLink>
-                    <NavLink to='/team' className={'MenuItem'} activeClassName={'MenuActive'}>
+                    <NavLink onClick={()=>setShowMenuState(false)} to='/team' className={'MenuItem'} activeClassName={'MenuActive'}>
                         <span className={'MenuItemTitle'}>КОМАНДА</span>
                     </NavLink>
-                    <NavLink to='/approach' className={'MenuItem'} activeClassName={'MenuActive'}>
+                    <NavLink onClick={()=>setShowMenuState(false)} to='/approach' className={'MenuItem'} activeClassName={'MenuActive'}>
                         <span className={'MenuItemTitle'}>ПОДХОД</span>
                     </NavLink>
-                    <a href='#contact' className={'MenuItem'}>
+                    <a onClick={()=>setShowMenuState(false)} href='#contact' className={'MenuItem'}>
                         <span className={'MenuItemTitle'}>КОНТАКТЫ</span>
                     </a>
                     <div className='NavMenu__close' onClick={closeMenu}>✕</div>
