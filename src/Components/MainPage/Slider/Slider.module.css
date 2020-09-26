@@ -46,3 +46,9 @@
 .SliderController:last-child:hover {
   transform: scale(1.1) rotateZ(180deg);
 }
+
+@media screen and (max-width: 1023px) {
+  .SliderWrapper {
+    width: 100%;
+  }
+}

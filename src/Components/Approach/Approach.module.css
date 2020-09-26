@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 .Approach {
     width: 80%;
     margin: 30px auto;
@@ -19,6 +23,7 @@
     display: flex;
     flex-flow: column;
     font-family: 'Times New Roman';
+    margin-left: 20px;
 }
 .ApproachTableTitle{
     font-size: 37px;
@@ -31,4 +36,39 @@
     margin-bottom: 20px;
     font-size: 20px;
     border-bottom: 1px solid #504c4c;
+}
+
+.ApproachElem:first-child .ApproachTable {
+    text-align: end;
+}
+
+.ApproachElem:nth-child(3) .ApproachTable {
+    text-align: end;
+}
+
+@media screen and (max-width: 1100px) {
+    .ApproachElem {
+        flex-direction: column;
+        overflow: visible;
+    }
+        .ApproachTable {
+            width: 100%;
+        }
+        .ApproachTableWrap {
+            font-size: 16px !important;
+        }
+            .ApproachTableTitle {
+                font-size: 30px;
+                margin-bottom: 40px;
+            }
+        .ApproachElemImg {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+    .ApproachElem:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+        .ApproachElem:nth-child(2) .ApproachElemImg{
+            transform: rotateZ(90deg) scale(2);
+        }
 }

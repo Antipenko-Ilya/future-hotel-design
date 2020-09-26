@@ -3,26 +3,26 @@ import styles from './Slider.module.css';
 import testImage from '../../../images/Projects/project-5.JPG'
 import {useTransition, animated} from 'react-spring'
 import BlackBG from '../../../images/black.jpg'
-import video1 from '../../../videos/1.mp4'
-import video2 from '../../../videos/2.mp4'
-import video3 from '../../../videos/3.mp4'
+// import video1 from '../../../videos/1.mp4'
+// import video2 from '../../../videos/2.mp4'
+// import video3 from '../../../videos/3.mp4'
 
 const mainSliderData = [
   {
     node: <video  className={styles.Slide} autoPlay={true} onEnded={()=>console.log(12)}>
-            <source src={video1}/>
+            {/*<source src={video1}/>*/}
           </video>,
     timeout: 10000
   },
   {
     node: <video  poster={BlackBG} className={styles.Slide} autoPlay={true} onEnded={()=>console.log(12)}>
-            <source src={video2}/>
+            {/*<source src={video2}/>*/}
           </video>,
     timeout: 22000
   },
   {
     node: <video  poster={BlackBG} className={styles.Slide} autoPlay={true} onEnded={()=>console.log(12)}>
-            <source src={video3}/>
+            {/*<source src={video3}/>*/}
           </video>,
     timeout: 10000
   }

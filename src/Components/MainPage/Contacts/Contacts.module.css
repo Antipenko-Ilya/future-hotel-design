@@ -77,3 +77,22 @@
 .ContactsInfoElemText {
     text-align: left;
 }
+
+@media screen and (max-width: 900px) {
+    .ContactsInfo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }   
+    .ContactsInfoElemStart,
+    .ContactsInfoElemCenter,
+    .ContactsInfoElemEnd {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .ContactsInfoBlock {
+        text-align: center;
+    }
+}

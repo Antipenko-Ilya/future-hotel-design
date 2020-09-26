@@ -20,16 +20,21 @@ import { NGKM } from './Interior/NGKM'
 import { Marriot } from './Interior/Marriot'
 import { Gellengic } from './Interior/Gellengic'
 import { HantiMansyisci } from './Interior/HantiMansyisc'
+import { Alushta } from './Achitechure/Alushta'
+import { Evpatoria } from './Achitechure/Evpatoria'
+import { GellengicYaht } from './Achitechure/GellengicYaht'
+import { Viksa } from './Achitechure/Viksa'
 
 export const projectsData = [
     {
         title: 'Апарт – отель Citadines City Centre Tbilisi',
         placement: 'Тбилиси, Грузия',
         type: 'Апарт - отель',
-        area: '5 600 м',
+        area: '5 600',
         year: '2019',
         images: TibilisiImages,
-        description: 'test'
+        description: 'test',
+        projType: 'hotel'
     },
     {
         title: 'Гостиничный комплекс «Югорская долина»',
@@ -38,7 +43,8 @@ export const projectsData = [
         area: '7200',
         year: '2019',
         images: ugorskayaImages,
-        description: 'test'
+        description: 'test',
+        projType: 'hotel'
     },
     {
         title: 'Санаторий «Южный»',
@@ -47,7 +53,8 @@ export const projectsData = [
         area: '3760',
         year: '2020',
         images: ForosImages,
-        description: 'test'
+        description: 'test',
+        projType: 'hotel'
     },
     {
         title: 'Лесной комплекс отдыха «Колбовичи»',
@@ -56,7 +63,8 @@ export const projectsData = [
         area: '6200',
         year: '2018 -2020',
         images: kolobovichImages,
-        description: 'test'
+        description: 'test',
+        projType: 'hotel'
     },
     {
         title: 'Семейный отель - вилла «7 Кипарисов»',
@@ -65,7 +73,8 @@ export const projectsData = [
         area: '1500',
         year: '2019',
         images: kiparisImages,
-        description: 'test'
+        description: 'test',
+        projType: 'hotel'
     },
     {
         title: 'Парк - отель «Доброград» II очередь',
@@ -74,153 +83,211 @@ export const projectsData = [
         area: '4280',
         year: '2019',
         images: dobrogradImages,
-        description: 'test'
+        description: 'test',
+        projType: 'hotel'
     },
     {
-        title: 'Hilton',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Hampton by Hilton Tyumen',
+        placement: 'Тюмень, Россия',
+        type: 'Отель',
+        area: '5 100',
+        year: '2019',
         images: Hylton,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Rubin',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Апарт – отель «Рубин»',
+        placement: 'Южно-Сахалинск, Россия',
+        type: 'Апарт - отель',
+        area: '950',
+        year: '2019',
         images: Rubin,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Luch',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Апарт-комплекс «Лучезарный»',
+        placement: 'Сочи, Россия',
+        type: 'Апарт - комплекс',
+        area: '1 520',
+        year: '2019',
         images: Luch,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Marriot Tverskaya',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Отель Marriott Moscow Tverskaya',
+        placement: 'Москва, Россия',
+        type: 'Отель',
+        area: '350',
+        year: '2018',
         images: MarriotTver,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Batashev',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Гостиница «Баташев»',
+        placement: 'Выкса, Россия',
+        type: 'Гостиница',
+        area: '750',
+        year: '2019',
         images: Batashev,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Meduza',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Гостиница Meduza Seaside Sochi',
+        placement: 'Сочи, Россия',
+        type: 'Гостиница',
+        area: '1 460',
+        year: '2019',
         images: Meduza,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Buhta',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Гостиничный комплекс «Владимирская бухта»',
+        placement: 'Ленинградская обл., Россия',
+        type: 'Гостиничный комплекс',
+        area: '4 600',
+        year: '2018',
         images: Buhta,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'ArtMoscow',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Гостиничный комплекс «Арт Москва Войковская»',
+        placement: 'Москва, Россия',
+        type: 'Гостиничный комплекс',
+        area: '4 600',
+        year: '2017',
         images: ArtMoscow,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Dobrograd_1',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Парк - отель «Доброград» I очередь',
+        placement: 'Доброград, Россия',
+        type: 'Парк-отель',
+        area: '2 870',
+        year: '2016',
         images: Dobrograd_1,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Hilton',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Hampton by Hilton Astana Triumphal Arch',
+        placement: 'Астана, Казахстан',
+        type: 'Отель',
+        area: '2 100',
+        year: '2016',
         images: HiltonArch,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Hyperior',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Hyperion Hotel Berlin',
+        placement: 'Берлин, Германия',
+        type: 'Отель',
+        area: '3 870',
+        year: '2016',
         images: Hyperior,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
     {
-        title: 'Novotel',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Novotel Moscow Sheremetyevo Airport hotel',
+        placement: 'Московская обл., Россия',
+        type: 'Отель',
+        area: '280',
+        year: '2014',
         images: Novotel,
-        description: ''
+        description: '',
+        projType: 'hotel'
     },
+
     {
-        title: 'НГКМ',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'АЧИМ Девелопмент',
+        placement: 'Новый Уренгой, Россия',
+        type: 'Административно-бытовое здание',
+        area: '3 400',
+        year: '2020',
         images: NGKM,
-        description: ''
+        description: '',
+        projType: 'office'
     },
     {
-        title: 'Marriot',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Штаб - квартира Marriott',
+        placement: 'Москва, Россия',
+        type: 'Отель',
+        area: '185,6',
+        year: '2019',
         images: Marriot,
-        description: ''
+        description: '',
+        projType: 'office'
     },
     {
-        title: 'Gellengic',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Гостевые дома загородного комплекса г. Геленджик',
+        placement: 'Геленджик, Россия',
+        type: 'Загородный комплекс',
+        area: '3 500',
+        year: '2019/2020',
         images: Gellengic,
-        description: ''
+        description: '',
+        projType: 'private'
     },
     {
-        title: 'HantiMansyisc',
-        placement: '',
-        type: '',
-        area: '',
-        year: '',
+        title: 'Стационар',
+        placement: 'Ханты-Мансийск, Россия',
+        type: 'Мед. учреждение',
+        area: '520',
+        year: '2019',
         images: HantiMansyisci,
-        description: ''
+        description: '',
+        projType: 'meds'
+    },
+    /* ARCH */
+    {
+        title: 'Концепт - идея Гостиничного комплекса',
+        placement: 'Алушта, Россия',
+        type: 'Гостиничный комплекс',
+        area: '31 000',
+        year: '2019',
+        images: Alushta,
+        description: '',
+        projType: 'arch'
+    },
+    {
+        title: 'Эскиз - концепция строительства группы коттеджей',
+        placement: 'Евпатория, Россия',
+        type: 'Коттеджный поселок',
+        area: '1 645',
+        year: '2019',
+        images: Evpatoria,
+        description: '',
+        projType: 'arch'
+    },
+    {
+        title: 'Яхт-школа',
+        placement: 'Геленджик, Россия',
+        type: 'Яхт - школа',
+        area: '138',
+        year: '2020',
+        images: GellengicYaht,
+        description: '',
+        projType: 'arch'
+    },
+    {
+        title: 'Эскиз - концепция Гостиницы на 48 номеров',
+        placement: 'Выкса, Россия',
+        type: 'Гостиница',
+        area: '3 480',
+        year: '2019',
+        images: Viksa,
+        description: '',
+        projType: 'arch'
     }
-    
 
 ]
 

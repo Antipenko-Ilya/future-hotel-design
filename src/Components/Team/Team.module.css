@@ -46,3 +46,35 @@
 .TeamContentDescription {
     font-size: 26px;
 }
+
+@media screen and (max-width: 1024px) {
+    .TeamContent {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .TeamContentImg {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-bottom: 20px !important;
+        max-width: 100%;
+    }
+    .TeamContentText {
+        max-width: unset !important;
+    }
+    .TeamAnotherContent {
+        flex-direction: column-reverse;
+        margin: 0 !important;
+    }
+    .TeamContentSubtitle {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .TeamContentTitle {
+        font-size: 30px;
+    }
+    .TeamContentDescription {
+        font-size: 20px;
+        text-align: start !important;
+    }
+}

@@ -49,3 +49,28 @@
   font-size: 18px;
   margin: 1.2em 0 0;
 }
+
+
+@media screen and (max-width: 1100px) {
+  .ProjectsElemTitle {
+    height: 50px;
+  }
+  .Projects {
+    width: 90%
+  }
+  .ProjectsElemImg {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .ProjectsContent {
+    flex-direction: column;
+  }
+  .ProjectsElem {
+    width: 100%;
+  }
+  .ProjectsElemTitle {
+    height: auto;
+  }
+}

@@ -15,6 +15,7 @@
 }
 .PreviewElem {
     margin-bottom: 25px;
+    margin-right: 25px;
 }
 
 .PreviewImage {
@@ -29,23 +30,25 @@
     line-height: 20px;
     font-family: 'Times new Roman';
 }
-@media (max-width: 1450px) {
-    .PreviewImage {
-        min-width: 555px;
+
+@media (max-width: 1660px) {
+    .Preview {
+        max-width: 95%;
+        justify-content: center;
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
     .PreviewImage {
-        min-width: 520px;
+        min-width: unset;
+        max-width: 450px;
     }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1024px) {
     .PreviewImage {
-        min-width: 450px;
+        max-width: 100%;
+        width: 700px;
     }
-}
-@media (max-width: 1300px) {
-    .PreviewImage {
-        min-width: 350px;
+    .PreviewElem {
+        margin-right: 0;
     }
 }
