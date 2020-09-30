@@ -1,80 +1,81 @@
 .Team {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .TeamContent {
-    display: flex;
-    justify-content: flex-start;
-    /* align-items: center; */
-    margin-bottom: 100px;
-    margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 .TeamAnotherContent {
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: center; */
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  margin-bottom: 100px;
 }
 .TeamContentImg {
-    max-width: 500px;
-    margin-right: 70px;
+  max-width: 500px;
+  margin-right: 70px;
 }
-.TeamContentImg:last-child  {
-    margin-right: 0px;
-    margin-left: 70px;
+.TeamContentImg:last-child {
+  margin-right: 0px;
+  margin-left: 70px;
 }
 .TeamContentText {
-    max-width: 500px;
-    text-align: right;
-    font-family: 'Times New Roman';
+  max-width: 500px;
+  text-align: right;
+  font-family: "Times New Roman";
 }
 .TeamContentText:last-child {
-    max-width: 500px;
-    text-align: left;
-    font-family: 'Times New Roman';
+  max-width: 500px;
+  text-align: left;
+  font-family: "Times New Roman";
 }
 
 .TeamContentTitle {
-    font-size: 48px;
+  font-size: 48px;
 }
-.TeamContentSubtitle{
-    font-size: 30px;
-    font-style: italic;
-    margin-bottom: 70px;
+.TeamContentSubtitle {
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 70px;
 }
 .TeamContentDescription {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 1024px) {
-    .TeamContent {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 60px;
-    }
-    .TeamContentImg {
-        margin-right: 0 !important;
-        margin-left: 0 !important;
-        margin-bottom: 20px !important;
-        max-width: 100%;
-    }
-    .TeamContentText {
-        max-width: unset !important;
-    }
-    .TeamAnotherContent {
-        flex-direction: column-reverse;
-        margin: 0 !important;
-    }
-    .TeamContentSubtitle {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .TeamContentTitle {
-        font-size: 30px;
-    }
-    .TeamContentDescription {
-        font-size: 20px;
-        text-align: start !important;
-    }
+  .TeamContent {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .TeamContentImg {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+    max-width: 100%;
+  }
+  .TeamContentText {
+    max-width: unset !important;
+    text-align: left;
+  }
+  .TeamAnotherContent {
+    flex-direction: column-reverse;
+    margin: 0 !important;
+  }
+  .TeamContentSubtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .TeamContentTitle {
+    font-size: 30px;
+  }
+  .TeamContentDescription {
+    font-size: 20px;
+    text-align: start !important;
+  }
 }

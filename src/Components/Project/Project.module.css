@@ -1,9 +1,9 @@
-.Project{
+.Project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
 }
 .ProjectHero {
   width: 80%;
@@ -27,14 +27,14 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .ProjectContentElem {
   width: 48%;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgba(0,0,0,0.5);
-  border-bottom: 1px solid rgba(0,0,0,0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .ProjectContentElemBlock {
   display: flex;
@@ -44,7 +44,7 @@
   padding: 10px;
 }
 .ProjectContentElemBlock:first-child {
-  border-bottom: 1px solid rgba(0,0,0,0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .ProjectImgs {
   width: 80%;
@@ -53,13 +53,13 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.ProjectImgs .ProjectImgsElem:first-child{
+.ProjectImgs .ProjectImgsElem:first-child {
   width: 70%;
   height: 600px;
   padding-right: 30px;
   object-fit: cover;
 }
-.ProjectImgs .ProjectImgsElem:last-child{
+.ProjectImgs .ProjectImgsElem:last-child {
   width: 30%;
   height: auto;
   background-size: cover;
@@ -73,19 +73,18 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.ProjectImgs_modif .ProjectImgsElem:first-child{
+.ProjectImgs_modif .ProjectImgsElem:first-child {
   width: 30%;
   height: 600px;
   background-size: cover;
   background-position: center;
 }
-.ProjectImgs_modif .ProjectImgsElem:last-child{
+.ProjectImgs_modif .ProjectImgsElem:last-child {
   width: 70%;
   padding-left: 30px;
   height: 600px;
   object-fit: cover;
 }
-
 
 .Project__WideImage {
   width: 80%;
@@ -95,53 +94,54 @@
   object-fit: cover;
 }
 
-
 @media screen and (max-width: 1024px) {
   .ProjectHero {
     width: calc(100% - 30px);
     height: auto;
     min-height: unset;
-  } 
+  }
   .ProjectHeroImg {
     height: auto;
   }
-  .ProjectImgs_modif .ProjectImgsElem:first-child{
+  .ProjectImgs_modif .ProjectImgsElem:first-child {
     display: none;
   }
   .ProjectImgs_modif {
-       width: calc(100% - 30px);
+    width: calc(100% - 30px);
   }
-  .ProjectImgs_modif .ProjectImgsElem:last-child{
+  .ProjectImgs_modif .ProjectImgsElem:last-child {
     width: 100%;
     padding: 0;
     height: auto;
   }
   .ProjectImgs {
-       width: calc(100% - 30px);
+    width: calc(100% - 30px);
   }
-  .ProjectImgs .ProjectImgsElem:first-child{
-     width: 100%;
-     padding: 0;
-        height: auto;
+  .ProjectImgs .ProjectImgsElem:first-child {
+    width: 100%;
+    padding: 0;
+    height: auto;
   }
-  .ProjectImgs .ProjectImgsElem:last-child{
+  .ProjectImgs .ProjectImgsElem:last-child {
     display: none;
-
   }
   .Project__WideImage {
-     width: calc(100% - 30px);
-     padding: 0;
+    width: calc(100% - 30px);
+    padding: 0;
   }
 
   .ProjectContent {
     flex-direction: column;
     width: calc(100% - 30px);
-  }  
-    .ProjectContentElem {
-      width: 100%;
-    }
-      .ProjectContentElemBlock {
-        font-size: 16px;
-        font-size: 16px;
-      }
+  }
+  .ProjectContentElem {
+    width: 100%;
+  }
+  .ProjectContentElem:last-child {
+    border-top: none;
+  }
+  .ProjectContentElemBlock {
+    font-size: 16px;
+    font-size: 16px;
+  }
 }

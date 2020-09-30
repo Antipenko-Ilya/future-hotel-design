@@ -1,54 +1,56 @@
 .PreviewWrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 .Preview {
-    max-width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .PreviewElem {
-    margin-bottom: 25px;
-    margin-right: 25px;
+  margin-bottom: 25px;
+  margin-right: 20px;
 }
 
 .PreviewImage {
-    min-width: 620px;
+  width: 609px;
+  max-height: 350px;
 }
 .PreviewButton {
-    background: #E5E5E5;
-    border: none;
-    min-width: 220px;
-    min-height: 40px;
-    font-size: 17px;
-    line-height: 20px;
-    font-family: 'Times new Roman';
+  background: #e5e5e5;
+  border: none;
+  min-width: 220px;
+  min-height: 40px;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "Times new Roman";
 }
 
 @media (max-width: 1660px) {
-    .Preview {
-        max-width: 95%;
-        justify-content: center;
-    }
+  .Preview {
+    max-width: 95%;
+    justify-content: center;
+  }
 }
 @media (max-width: 1440px) {
-    .PreviewImage {
-        min-width: unset;
-        max-width: 450px;
-    }
+  .PreviewImage {
+    min-width: unset;
+    max-width: 450px;
+    max-height: 300px;
+  }
 }
 @media (max-width: 1024px) {
-    .PreviewImage {
-        max-width: 100%;
-        width: 700px;
-    }
-    .PreviewElem {
-        margin-right: 0;
-    }
+  .PreviewImage {
+    max-width: 100%;
+    width: 520px;
+  }
+  .PreviewElem {
+    margin-right: 0;
+  }
 }
