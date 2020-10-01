@@ -14,7 +14,8 @@
   flex-wrap: wrap;
 }
 .PreviewElem {
-  margin-bottom: 25px;
+  position: relative;
+  margin-bottom: 20px;
   margin-right: 20px;
 }
 
@@ -31,7 +32,21 @@
   line-height: 20px;
   font-family: "Times new Roman";
 }
-
+.PreviewLayer {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: "Times New Roman";
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+}
 @media (max-width: 1660px) {
   .Preview {
     max-width: 95%;
