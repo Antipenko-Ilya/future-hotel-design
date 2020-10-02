@@ -1,0 +1,10 @@
+.Slider__title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}

@@ -1,78 +1,100 @@
 .ContactsWrap {
-    width: 100%;
-    min-height: 220px;
-    justify-content: center;
-    background-color: #727272;
-    color: #c2c2c2;
+  width: 100%;
+  min-height: 220px;
+  justify-content: center;
+  background-color: #727272;
+  color: #c2c2c2;
 }
 .Contacts {
-    width: 80%;
-    min-height: 220px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid #727272;
-    background-color: #727272;
-    color: #c2c2c2;
+  width: 80%;
+  min-height: 220px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #727272;
+  background-color: #727272;
+  color: #c2c2c2;
 }
 .ContactsTitle {
-    font-size: 24px;
-    line-height: 23px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: 'Times new Roman';
+  font-size: 24px;
+  line-height: 23px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Times new Roman";
 }
 .ContactsInfo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Times new Roman';
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: "Times new Roman";
 }
 .ContactsInfoBlock {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .ContactsInfoBlock:first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 25px;
 }
 .ContactsInfoBlock {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .ContactsInfoElemStart {
-    min-width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 7px;
-    font-size: 20px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 7px;
+  font-size: 20px;
 }
 .ContactsInfoElemCenter {
-    min-width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 7px;
-    font-size: 20px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+  font-size: 20px;
 }
 .ContactsInfoElemEnd {
-    min-width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 7px;
-    font-size: 20px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 7px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #c2c2c2;
 }
 .ContactsInfoElemText {
-    text-align: left;
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+  .ContactsInfo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .ContactsInfoElemStart,
+  .ContactsInfoElemCenter,
+  .ContactsInfoElemEnd {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .ContactsInfoBlock {
+    text-align: center;
+  }
 }

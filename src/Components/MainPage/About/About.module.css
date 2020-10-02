@@ -23,3 +23,13 @@
     font-family: 'Times new Roman';
     margin-top: 100px;
 }
+
+@media screen and (max-width: 719px) {
+    .AboutDescription {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+    .About {
+        margin-bottom: 40px;
+    }
+}

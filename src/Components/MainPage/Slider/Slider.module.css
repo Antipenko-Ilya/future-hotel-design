@@ -4,6 +4,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 
 .SlideWrapper {
@@ -11,6 +12,14 @@
   top: 0px;
   left: 0px;
   height: 100%;
+  margin-top: 20px;
+}
+
+.SlideWrapper img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-height: 100%;
 }
 
 .Slide {
@@ -45,4 +54,24 @@
 }
 .SliderController:last-child:hover {
   transform: scale(1.1) rotateZ(180deg);
+}
+
+@media screen and (max-width: 1023px) {
+  .SliderWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .SlideWrapper {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .SliderController {
+    left: 30px;
+  }
+  .SliderController:last-child {
+    left: unset;
+    right: 30px;
+  }
 }

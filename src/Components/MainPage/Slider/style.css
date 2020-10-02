@@ -1,0 +1,32 @@
+.Slider__title {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 7px;
+  font-family: "Times new Roman";
+  color: gray;
+  position: relative;
+  top: -20px;
+}
+
+.Slider__title-text {
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .Slider__title {
+    top: -100px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 719px) {
+  .Slider__title {
+    top: -20px;
+    padding: 0px 20px;
+  }
+}
+
