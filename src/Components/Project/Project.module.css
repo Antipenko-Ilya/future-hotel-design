@@ -94,7 +94,17 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 425px) {
+  .ProjectImgsElem {
+    object-fit: cover !important;
+    max-height: 250px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  .ProjectImgs_modif .ProjectImgsElem:last-child {
+    object-fit: unset;
+  }
   .ProjectHero {
     width: calc(100% - 30px);
     height: auto;
@@ -114,6 +124,7 @@
     padding: 0;
     height: auto;
   }
+
   .ProjectImgs {
     width: calc(100% - 30px);
   }
