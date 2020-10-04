@@ -11,9 +11,9 @@ export const dobrogradImages = [
     main1,
     main2,
     main,
-    img5,
     img1,
+    img2,
     img3,
     img4,
-    img2,
+    img5,
 ]

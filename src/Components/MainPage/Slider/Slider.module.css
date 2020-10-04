@@ -69,6 +69,7 @@
 
   .SliderController {
     left: 30px;
+    font-size: 30px;
   }
   .SliderController:last-child {
     left: unset;
