@@ -21,22 +21,10 @@ let mainSliderData = [
       <video
         className={styles.Slide}
         autoPlay={true}
+        preload="true" muted="true"
         onEnded={() => console.log(12)}
       >
         <source src={video1} />
-      </video>
-    ),
-    timeout: 10000,
-  },
-  {
-    node: (
-      <video
-        poster={BlackBG}
-        className={styles.Slide}
-        autoPlay={true}
-        onEnded={() => console.log(12)}
-      >
-        <source src={video2} />
       </video>
     ),
     timeout: 22000,
@@ -47,6 +35,21 @@ let mainSliderData = [
         poster={BlackBG}
         className={styles.Slide}
         autoPlay={true}
+         muted="true"
+        onEnded={() => console.log(12)}
+      >
+        <source src={video2} />
+      </video>
+    ),
+    timeout: 12000,
+  },
+  {
+    node: (
+      <video
+        poster={BlackBG}
+        className={styles.Slide}
+        autoPlay={true}
+        preload="true" muted="true"
         onEnded={() => console.log(12)}
       >
         <source src={video3} />

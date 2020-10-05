@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,8 +15,16 @@ import Approach from './Components/Approach/Approach';
 import './App.css';
 
 function App() {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>setLoading(false), 2000)
+  }, [0])
+
   return (
     <Router>
+    { loading && <div className='Preloader'/> }
     <div className="App">
       <div className="container">
         <Header/>
